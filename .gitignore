@@ -8,13 +8,13 @@ target/
 *.iws
 *.class
 *.properties
-*.jar
 out.log
 out.log.*
+#*.jar
 #*.iml
 #*.info
 
 /out/
 
 !JavaRushPlugin.properties
-
+!/libs/*.*
