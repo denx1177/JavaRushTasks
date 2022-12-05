@@ -9,7 +9,7 @@ import quest.init.GameInit;
 import java.io.IOException;
 
 public class GameController {
-    private static final String CONFIG_FILE_PATH = "game-config.json";
+    private static final String CONFIG_FILE_PATH = "configs/game-config.json";
 
     public static void main(String[] args) throws IOException {
 //        Game game = GameInit.generateGame();
