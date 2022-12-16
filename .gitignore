@@ -5,16 +5,18 @@ target/
 .idea/
 .idea
 .repository/
+*.iml
 *.iws
+
+
 *.class
+*.info
 *.properties
-out.log
-out.log.*
-#*.jar
-#*.iml
-#*.info
+*.jar
+
+!/libs/*.*
 
 /out/
+/out.log
+/out.log.*
 
-!JavaRushPlugin.properties
-!/libs/*.*

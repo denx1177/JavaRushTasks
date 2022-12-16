@@ -11,5 +11,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="JacksonObjectMapper" level="project" />
+    <orderEntry type="library" name="lombok-1.18.22" level="project" />
   </component>
 </module>
