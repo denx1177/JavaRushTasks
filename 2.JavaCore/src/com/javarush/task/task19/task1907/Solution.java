@@ -1,6 +1,8 @@
 package com.javarush.task.task19.task1907;
 
 import java.io.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /* 
 Считаем слово
@@ -11,20 +13,18 @@ public class Solution {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedReader reader = new BufferedReader(new FileReader(br.readLine()));
         br.close();
-        int charFind = 0;
         int hitCounter = 0;
+        Pattern ptrn = Pattern.compile("(\\bworld\\b)");
         while (reader.ready()) {
             String line = reader.readLine();
-            String[] words = line.split("");
+            Matcher matcher = ptrn.matcher(line);
+            while (matcher.find()) {
+//                System.out.println(String.format("Match: %s at index [%d, %d]",
+//                        matcher.group(), matcher.start(), matcher.end()));
+                hitCounter += matcher.groupCount();
             }
+        }
         reader.close();
         System.out.println(hitCounter);
-    }
-    public static int validateCharacterPosition(String word, char ch, int position){
-        if (word.substring(position, position+1).equals(String.valueOf(ch))){
-            return position+1;
-        } else{
-            return -1;
-        }
     }
 }
