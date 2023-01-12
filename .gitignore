@@ -14,7 +14,7 @@ target/
 *.properties
 #*.jar
 
-!/libs/*.*
+!/lib/*.*
 
 /out/
 /out.log
